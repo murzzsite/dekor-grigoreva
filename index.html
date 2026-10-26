@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Декоратор Кристина Григорьева — оформление свадеб и праздников</title>
+<meta name="description" content="Кристина Григорьева — декоратор свадеб, детских дней рождения и фотозон. Рисую макет, подбираю цветы и ткани, монтирую и убираю после праздника.">
+<meta property="og:title" content="Декоратор Кристина Григорьева">
+<meta property="og:description" content="Оформление свадеб, дней рождения и фотозон: макет, живые цветы, ткани, монтаж и демонтаж.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://murzzsite.github.io/dekor-grigoreva/img/hall-decor.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 21V11a9 9 0 0 1 18 0v10z' fill='%231B2A38'/%3E%3Cpath d='M7.5 21v-9.5a4.5 4.5 0 0 1 9 0V21z' fill='%23FAF9F6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#top" class="logo" aria-label="Кристина Григорьева, декоратор">
+      <svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V11a9 9 0 0 1 18 0v10z" fill="currentColor"/><path d="M7.5 21v-9.5a4.5 4.5 0 0 1 9 0V21z" fill="var(--paper)"/></svg>
+      <span class="logo__name">Кристина Григорьева</span><span class="logo__suffix">декоратор</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#works">Работы</a>
+      <a href="#services">Что оформляю</a>
+      <a href="#process">Как работаю</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="https://t.me/dekorgrigoreva" class="header__tg" target="_blank" rel="noopener">@dekorgrigoreva</a>
+      <a href="#contact" class="btn btn--sm"><span class="btn__text">Обсудить праздник</span></a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO: открытка-макет рядом с залом -->
+  <section class="hero">
+    <div class="hero__card">
+      <div class="swatches" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="hero__body">
+        <h1 class="hero__title" data-r>Декоратор Кристина Григорьева</h1>
+        <p class="hero__lead" data-r>Оформляю свадьбы, детские дни рождения и фотозоны: рисую макет, подбираю цветы и ткани, монтирую и убираю после праздника.</p>
+        <div class="hero__cta" data-r>
+          <a href="#contact" class="btn"><span class="btn__text">Обсудить мой праздник</span></a>
+          <a href="#works" class="link">Смотреть работы</a>
+        </div>
+      </div>
+      <ul class="hero__links" data-r>
+        <li><a href="#works">Работы</a></li>
+        <li><a href="#services">Что оформляю</a></li>
+        <li><a href="#dates">Красивые даты</a></li>
+      </ul>
+    </div>
+
+    <figure class="hero__room reveal-cmp" id="cmp" style="--p:100">
+      <img class="cmp__img cmp__img--bare" src="img/hall-bare.jpg" width="900" height="1200" alt="Банкетный зал без оформления: столы под белыми скатертями и белые стулья">
+      <img class="cmp__img cmp__img--decor" src="img/hall-decor.jpg" width="600" height="800" alt="Тот же банкетный зал с оформлением: стол молодожёнов с голубой тканью и живыми цветами">
+      <span class="cmp__tag cmp__tag--l">С декором</span>
+      <span class="cmp__tag cmp__tag--r">Без декора</span>
+      <span class="cmp__bar" aria-hidden="true"><span class="cmp__knob"></span></span>
+      <input class="cmp__range" id="cmpRange" type="range" min="0" max="100" value="100" aria-label="Тот же зал: потяните, чтобы сравнить без декора и с декором">
+      <figcaption class="cmp__cap">Тот же зал на свадьбе 15 марта, отель «Купец». Потяните шторку</figcaption>
+    </figure>
+  </section>
+
+  <!-- ABOUT: письмо -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="letter" data-r>
+        <h2 class="letter__title">Привет, я Кристина</h2>
+        <p>Я декоратор, и мне важно, чтобы оформление было не просто красивым, а <mark>про вас</mark>.</p>
+        <p>Сначала слушаю вашу историю, настроение и мечты. Потом перевожу их в цветы, ткани, свет и пространство. Размер фотозоны, расположение деталей, цвет фона, имя и дата на баннере: всё это я рисую в макете, и пока вы его не согласуете, ничего не начинается.</p>
+        <p>Оформляю свадьбы, дни рождения, фотосессии, камерные праздники и особые даты. Для меня декор не фон, а часть воспоминаний, которые остаются на фотографиях.</p>
+        <p>6 февраля 2026 мы оформили сразу две свадьбы на двух площадках: разные концепции, разные цвета и одинаково внимательное отношение к деталям.</p>
+        <p class="letter__sign"><strong>Кристина Григорьева</strong><span>декоратор</span></p>
+        <div class="letter__tear">
+          <span>Расскажите про дату и площадку</span>
+          <a href="https://t.me/dekorgrigoreva" target="_blank" rel="noopener" class="btn btn--ink"><span class="btn__text">Написать в Telegram</span></a>
+        </div>
+      </div>
+      <figure class="about__photo curtain" data-r>
+        <img src="img/kristina.jpg" width="534" height="800" alt="Кристина Григорьева на фоне арки с розовыми шарами и бантом на шторе" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- CASE: ожидание / реальность -->
+  <section class="case" id="case">
+    <div class="case__grid">
+      <div class="case__text">
+        <h2 class="h2" data-r>Референс и&nbsp;реальность</h2>
+        <p class="case__p" data-r>Первый день рождения малыша. Мама пришла с картинкой, и мы обсудили каждый элемент: размер, расположение деталей, цвет фона. Отрисовали макеты, согласовали, и началась работа.</p>
+        <p class="case__p" data-r>Благородный фон в клетку, имя и дата, дерево и детали с характером. Получилось даже уютнее, чем на эскизе: детский декор тоже может быть стильным.</p>
+      </div>
+      <figure class="plate plate--ref" data-r>
+        <img src="img/ref-mom.jpg" width="705" height="800" alt="Картинка-референс, которую принесла мама именинника: клетчатый баннер с мишкой и лошадкой" loading="lazy">
+        <figcaption>Референс мамы</figcaption>
+      </figure>
+      <figure class="plate plate--real curtain" data-r>
+        <img src="img/kids-real.jpg" width="600" height="800" alt="Готовая фотозона: клетчатый баннер с мишкой, именем и датой, деревянная лошадка и белые цветы" loading="lazy">
+        <figcaption>Что получилось</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- WORKS: галерея с ярлыками -->
+  <section class="works" id="works">
+    <h2 class="h2 works__title" data-r>Работы</h2>
+    <p class="works__note" data-r>Свадьбы и детские праздники: живые цветы, ткани, фотозоны с именами и датами.</p>
+    <ul class="tiles">
+      <li class="tile tile--a">
+        <div class="tile__pic curtain" data-r><img src="img/kids-real.jpg" width="600" height="800" alt="Детская фотозона с клетчатым баннером и белыми цветами" loading="lazy"></div>
+        <div class="tile__strip"><p class="tile__row"><span>Клетка</span><span>Имя и дата</span><span>Дерево</span><span>Цветы</span></p><p class="tile__row tile__row--b"><strong>День рождения, 1 год</strong></p></div>
+      </li>
+      <li class="tile tile--b">
+        <div class="tile__pic curtain" data-r><img src="img/wed-navy.jpg" width="600" height="800" alt="Президиум свадьбы в синей гамме со свечами, монограммой из букв и цветами" loading="lazy"></div>
+        <div class="tile__strip"><p class="tile__row"><span>Синий</span><span>Свечи</span><span>Буквы</span><span>Цветы</span></p><p class="tile__row tile__row--b"><strong>Свадьба, 6 февраля</strong></p></div>
+      </li>
+      <li class="tile tile--c">
+        <div class="tile__pic curtain" data-r><img src="img/wed-pink.jpg" width="600" height="800" alt="Свадебный зал в розовых тонах с цветочной аркой у окна и столом молодожёнов" loading="lazy"></div>
+        <div class="tile__strip"><p class="tile__row"><span>Арка</span><span>Тюль</span><span>Белый</span><span>Розовый</span></p><p class="tile__row tile__row--b"><strong>Свадьба, 6 февраля</strong></p></div>
+      </li>
+      <li class="tile tile--d">
+        <div class="tile__pic curtain" data-r><img src="img/hall-decor.jpg" width="600" height="800" alt="Стол молодожёнов с голубой тканью, белыми и синими цветами у зеркальной стены" loading="lazy"></div>
+        <div class="tile__strip"><p class="tile__row"><span>Ткань</span><span>Голубой</span><span>Белый</span><span>Цветы</span></p><p class="tile__row tile__row--b"><strong>Свадьба, 15 марта</strong></p></div>
+      </li>
+      <li class="tile tile--b">
+        <div class="tile__pic curtain" data-r><img src="img/wed-photozone.jpg" width="600" height="800" alt="Свадебная фотозона с именами молодожёнов на баннере и цветочными стойками" loading="lazy"></div>
+        <div class="tile__strip"><p class="tile__row"><span>Фотозона</span><span>Имена</span><span>Стойки</span><span>Цветы</span></p><p class="tile__row tile__row--b"><strong>Свадьба, 15 марта</strong></p></div>
+      </li>
+      <li class="tile tile--d">
+        <div class="tile__pic curtain" data-r><img src="img/wed-peony.jpg" width="600" height="800" alt="Крупный план: белые пионы и голубые цветы у свадебного баннера" loading="lazy"></div>
+        <div class="tile__strip"><p class="tile__row"><span>Пионы</span><span>Голубые</span><span>Вблизи</span><span>Баннер</span></p><p class="tile__row tile__row--b"><strong>Свадьба, 15 марта</strong></p></div>
+      </li>
+      <li class="tile tile--a">
+        <div class="tile__pic curtain" data-r><img src="img/kids-horse.jpg" width="600" height="800" alt="Деревянная лошадка у клетчатого баннера и белых цветов" loading="lazy"></div>
+        <div class="tile__strip"><p class="tile__row"><span>Лошадка</span><span>Баннер</span><span>Белый</span><span>Цветы</span></p><p class="tile__row tile__row--b"><strong>День рождения, 1 год</strong></p></div>
+      </li>
+      <li class="tile tile--c">
+        <div class="tile__pic curtain" data-r><img src="img/wed-hall.jpg" width="800" height="600" alt="Банкетный зал с оформленным столом, цветочными композициями и круглыми столами" loading="lazy"></div>
+        <div class="tile__strip"><p class="tile__row"><span>Зал</span><span>Столы</span><span>Композиции</span><span>Свет</span></p><p class="tile__row tile__row--b"><strong>Свадьба, 15 марта</strong></p></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- SERVICES: меню -->
+  <section class="services" id="services">
+    <div class="services__grid">
+      <div class="services__text">
+        <h2 class="h2" data-r>Что оформляю</h2>
+        <p class="services__p" data-r>Стоимость зависит от зала, размера фотозоны и материалов. Называю сумму после того, как увижу площадку и ваши референсы.</p>
+        <p class="services__p" data-r>Напишите дату, место и примерное число гостей, и я скажу, что подойдёт.</p>
+        <a href="#contact" class="btn" data-r><span class="btn__text">Узнать стоимость</span></a>
+      </div>
+      <div class="sheet" data-r>
+        <div class="sheet__in">
+          <h3 class="sheet__name">Меню оформления</h3>
+          <p class="sheet__note">Цена считается под вашу площадку</p>
+          <div class="sheet__group">
+            <h4>Свадьбы</h4>
+            <dl>
+              <div class="item"><dt>Президиум</dt><dd>по площадке</dd><dd class="item__d">Стол молодожёнов: ткани, живые цветы, свечи</dd></div>
+              <div class="item"><dt>Фотозона и арка</dt><dd>по размеру</dd><dd class="item__d">Стойки или арка, баннер с именами, композиции</dd></div>
+              <div class="item"><dt>Оформление зала</dt><dd>по площади</dd><dd class="item__d">Шторы, тюль, композиции на столы, детали по концепции</dd></div>
+            </dl>
+          </div>
+          <div class="sheet__group">
+            <h4>Дни рождения</h4>
+            <dl>
+              <div class="item"><dt>Детская фотозона</dt><dd>по макету</dd><dd class="item__d">Фон, имя и дата, объёмные детали, дерево, цветы</dd></div>
+              <div class="item"><dt>Праздник по вашему референсу</dt><dd>по макету</dd><dd class="item__d">Приносите картинку: нарисую макет и обсудим размеры</dd></div>
+              <div class="item"><dt>Фотозона-сюрприз</dt><dd>по размеру</dd><dd class="item__d">Для взрослого праздника, с любым настроением</dd></div>
+            </dl>
+          </div>
+          <div class="sheet__group">
+            <h4>Съёмки и особые даты</h4>
+            <dl>
+              <div class="item"><dt>Декор для фотосессии</dt><dd>по задаче</dd><dd class="item__d">Фон, цветы и детали под вашу съёмку</dd></div>
+              <div class="item"><dt>Камерные праздники</dt><dd>по задаче</dd><dd class="item__d">Годовщины и особые даты в небольшом кругу</dd></div>
+            </dl>
+          </div>
+          <p class="sheet__foot">Монтаж в день праздника и уборка после него<br>входят в работу</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATES: красивые даты -->
+  <section class="dates" id="dates">
+    <div class="dates__head">
+      <h2 class="h2" data-r>Свадьба в красивую дату</h2>
+      <p class="dates__p" data-r>Ближайшие красивые даты этого года. Нажмите на дату, и я проверю, свободна ли она для оформления.</p>
+    </div>
+    <div class="dates__row" role="list">
+      <button type="button" class="dt dt--a" data-date="11.11.2026" role="listitem" data-r>
+        <span class="dt__num">11.11.26</span>
+        <span class="dt__txt">Четыре единицы в ряд: последовательность шагов на общем пути к счастью.</span>
+      </button>
+      <button type="button" class="dt dt--b" data-date="26.11.2026" role="listitem" data-r>
+        <span class="dt__num">26.11.26</span>
+        <span class="dt__txt">Зимние сумерки, интимность и тепло встречи двух людей.</span>
+      </button>
+      <button type="button" class="dt dt--c" data-date="12.12.2026" role="listitem" data-r>
+        <span class="dt__num">12.12.26</span>
+        <span class="dt__txt">Новогоднее настроение и атмосфера зимней сказки.</span>
+      </button>
+      <button type="button" class="dt dt--d" data-date="26.12.2026" role="listitem" data-r>
+        <span class="dt__num">26.12.26</span>
+        <span class="dt__txt">Проводить старый год и встретить новый уже мужем и женой.</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- PROCESS: квитанция -->
+  <section class="process" id="process">
+    <div class="process__grid">
+      <div class="process__text">
+        <h2 class="h2" data-r>Как проходит работа</h2>
+        <p class="process__p" data-r>Каждый шаг согласуем с вами. Пока вы не одобрили макет, я ничего не покупаю и не монтирую.</p>
+      </div>
+      <div class="slip" data-r>
+        <div class="slip__in">
+          <h3 class="slip__h">До праздника</h3>
+          <p class="slip__row"><span>Вы пишете дату, площадку и референсы</span><i></i><b>заявка</b></p>
+          <p class="slip__row"><span>Обсуждаем размеры, цвета и детали</span><i></i><b>разговор</b></p>
+          <p class="slip__row"><span>Рисую макет, вы его согласуете</span><i></i><b>макет</b></p>
+          <h3 class="slip__h">В день праздника</h3>
+          <p class="slip__row"><span>Приезжаю заранее и монтирую оформление</span><i></i><b>монтаж</b></p>
+          <h3 class="slip__h">После праздника</h3>
+          <p class="slip__row"><span>Убираю всё оформление с площадки</span><i></i><b>демонтаж</b></p>
+          <p class="slip__total"><span>Вы получаете зал по согласованному макету</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ: карточки -->
+  <section class="faq" id="faq">
+    <h2 class="h2 faq__title" data-r>Вопросы и ответы</h2>
+    <div class="cards" id="cards">
+      <details class="card card--a" name="faq" open>
+        <summary><span class="card__tab">Цена</span><span class="card__q">Сколько стоит оформление?</span></summary>
+        <div class="card__a"><p>Зависит от зала, размера фотозоны и материалов. Называю сумму после того, как увижу площадку и референсы. Напишите дату, место и примерное число гостей.</p></div>
+      </details>
+      <details class="card card--b" name="faq">
+        <summary><span class="card__tab">Макет</span><span class="card__q">Как понять, что получится?</span></summary>
+        <div class="card__a"><p>Перед работой рисую макет: размеры, расположение деталей, цвет фона. Начинаю только после вашего согласования.</p></div>
+      </details>
+      <details class="card card--c" name="faq">
+        <summary><span class="card__tab">Референс</span><span class="card__q">Можно сделать по моей картинке?</span></summary>
+        <div class="card__a"><p>Да. Мама именинника пришла с картинкой, мы разобрали каждый элемент и воплотили её в жизнь. Получилось даже уютнее, чем на эскизе.</p></div>
+      </details>
+      <details class="card card--d" name="faq">
+        <summary><span class="card__tab">Самим</span><span class="card__q">Не проще ли украсить зал самим?</span></summary>
+        <div class="card__a"><p>Красивые материалы стоят недёшево. Нужно приехать заранее и привезти всё, а для фотозоны понадобится большая машина или несколько. После банкета кому-то придётся убирать, а купленное ещё нужно куда-то деть. И готовый результат обычно отличается от задуманного.</p></div>
+      </details>
+      <details class="card card--a" name="faq">
+        <summary><span class="card__tab">Площадка</span><span class="card__q">Работаете на моей площадке?</span></summary>
+        <div class="card__a"><p>Приезжаю в ресторан, отель или банкетный зал и подбираю оформление под интерьер. Напишите, где пройдёт праздник.</p></div>
+      </details>
+      <details class="card card--b" name="faq">
+        <summary><span class="card__tab">Формат</span><span class="card__q">Какие праздники оформляете?</span></summary>
+        <div class="card__a"><p>Свадьбы, дни рождения, фотосессии, камерные праздники и особые даты.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT: купон -->
+  <section class="contact" id="contact">
+    <div class="coupon" data-r>
+      <div class="coupon__l">
+        <h2 class="coupon__h">Расскажите о&nbsp;празднике</h2>
+        <p class="coupon__p">Напишите дату, площадку и референс, если он есть. Отвечу в Telegram или по телефону и скажу, что подойдёт.</p>
+        <ul class="coupon__links">
+          <li><a href="https://t.me/dekorgrigoreva" target="_blank" rel="noopener">Telegram: dekorgrigoreva</a></li>
+          <li><a href="https://vk.ru/kri.grigoreva" target="_blank" rel="noopener">ВКонтакте: kri.grigoreva</a></li>
+        </ul>
+      </div>
+      <form id="leadForm" class="coupon__form" novalidate>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <label class="sr" for="f-name">Имя</label>
+        <input id="f-name" type="text" name="name" placeholder="Как вас зовут" autocomplete="name" required>
+        <label class="sr" for="f-contact">Как с вами связаться</label>
+        <input id="f-contact" type="text" name="contact" placeholder="Telegram или телефон" autocomplete="tel" required>
+        <div class="coupon__two">
+          <label class="sr" for="f-event">Какой праздник</label>
+          <select id="f-event" name="event">
+            <option value="Свадьба">Свадьба</option>
+            <option value="День рождения">День рождения</option>
+            <option value="Фотозона или съёмка">Фотозона или съёмка</option>
+            <option value="Другое">Другое</option>
+          </select>
+          <label class="sr" for="f-date">Дата праздника</label>
+          <input id="f-date" type="text" name="date" placeholder="Дата праздника">
+        </div>
+        <label class="sr" for="f-comment">Площадка и пожелания</label>
+        <textarea id="f-comment" name="comment" rows="2" placeholder="Площадка, референс, пожелания"></textarea>
+        <button type="submit" class="coupon__btn">Отправить заявку</button>
+        <p class="coupon__hint">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой обработки персональных данных</a>.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="swatches swatches--foot" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="footer__in">
+    <p class="footer__big" data-r>Кристина Григорьева</p>
+    <div class="footer__row">
+      <p>Декоратор свадеб, детских праздников и фотозон</p>
+      <p><a href="https://t.me/dekorgrigoreva" target="_blank" rel="noopener">Telegram</a> &nbsp; <a href="https://vk.ru/kri.grigoreva" target="_blank" rel="noopener">ВКонтакте</a> &nbsp; <a href="privacy.html">Политика конфиденциальности</a></p>
+      <p>© <span id="year">2026</span> Кристина Григорьева</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://t.me/dekorgrigoreva" class="fab" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 4.3 2.9 11.5c-.9.4-.9 1.1-.2 1.3l4.7 1.5 1.8 5.5c.2.6.4.8.8.8.4 0 .6-.2.9-.4l2.2-2.1 4.5 3.3c.8.5 1.4.2 1.6-.8l3-14.3c.3-1.2-.4-1.8-1.7-1.2zM8.6 13.6l9.3-5.9c.4-.3.8-.1.5.2l-7.6 6.9-.3 3.2-1.9-4.4z" fill="currentColor"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
